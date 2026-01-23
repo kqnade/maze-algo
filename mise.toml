@@ -1,2 +1,15 @@
 [tools]
 java = "latest"
+
+[tasks.lint]
+run = "./gradlew lint"
+
+[tasks.test]
+run = "./gradlew test"
+
+[tasks.build]
+run = "./gradlew build"
+
+[tasks.all]
+depends = ["lint", "test", "build"]
+run = "echo \"OK, done!\""

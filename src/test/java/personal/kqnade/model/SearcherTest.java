@@ -3,7 +3,7 @@ package personal.kqnade.model;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.awt.Point;
-import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class SearcherTest {
@@ -19,7 +19,11 @@ class SearcherTest {
         // 1 G 0 0 1
         // 1 1 1 1 1
         maze = new Maze(5, 5);
-        for(int y=0; y<5; y++) for(int x=0; x<5; x++) maze.setCell(x, y, 1);
+        for(int y=0; y<5; y++) {
+            for(int x=0; x<5; x++) {
+                maze.setCell(x, y, 1);
+            }
+        }
         
         maze.setCell(1, 1, 0); // Start
         maze.setCell(2, 1, 0);
@@ -77,7 +81,9 @@ class SearcherTest {
     private void runSearcher(Searcher searcher) {
         int maxSteps = 100;
         while (!searcher.isCompleted() && maxSteps-- > 0) {
-            if (!searcher.step()) break;
+            if (!searcher.step()) {
+                break;
+            }
         }
     }
 }

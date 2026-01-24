@@ -15,13 +15,27 @@ public class Maze {
         this.cells = new int[height][width];
     }
 
-    public int getWidth() { return width; }
-    public int getHeight() { return height; }
-    public int[][] getCells() { return cells; }
-    public Point getStart() { return start; }
-    public void setStart(Point start) { this.start = start; }
-    public Point getGoal() { return goal; }
-    public void setGoal(Point goal) { this.goal = goal; }
+    public int getWidth() {
+        return width;
+    }
+    public int getHeight() {
+        return height;
+    }
+    public int[][] getCells() {
+        return cells;
+    }
+    public Point getStart() {
+        return start;
+    }
+    public void setStart(Point start) {
+        this.start = start;
+    }
+    public Point getGoal() {
+        return goal;
+    }
+    public void setGoal(Point goal) {
+        this.goal = goal;
+    }
 
     public void setCell(int x, int y, int value) {
         if (isInBounds(x, y)) {

@@ -47,7 +47,9 @@ public class MazePanel extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        if (maze == null) return;
+        if (maze == null) {
+            return;
+        }
 
         // Draw Title
         g.setColor(Color.BLACK);

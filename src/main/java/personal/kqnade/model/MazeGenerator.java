@@ -11,8 +11,12 @@ public class MazeGenerator {
 
     public Maze generate(int width, int height) {
         // Ensure odd dimensions for walls and paths
-        if (width % 2 == 0) width++;
-        if (height % 2 == 0) height++;
+        if (width % 2 == 0) {
+            width++;
+        }
+        if (height % 2 == 0) {
+            height++;
+        }
 
         Maze maze = new Maze(width, height);
 

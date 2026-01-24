@@ -33,11 +33,21 @@ public class ControlPanel extends JPanel {
         add(statusLabel);
     }
 
-    public JButton getGenerateButton() { return generateButton; }
-    public JButton getStartButton() { return startButton; }
-    public JButton getPauseButton() { return pauseButton; }
-    public JButton getResetButton() { return resetButton; }
-    public JSlider getSpeedSlider() { return speedSlider; }
+    public JButton getGenerateButton() {
+        return generateButton;
+    }
+    public JButton getStartButton() {
+        return startButton;
+    }
+    public JButton getPauseButton() {
+        return pauseButton;
+    }
+    public JButton getResetButton() {
+        return resetButton;
+    }
+    public JSlider getSpeedSlider() {
+        return speedSlider;
+    }
     
     public void setStatusText(String text) {
         statusLabel.setText(text);

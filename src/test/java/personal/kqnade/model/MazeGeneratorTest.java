@@ -1,7 +1,7 @@
 package personal.kqnade.model;
 
 import org.junit.jupiter.api.Test;
-import java.awt.Point;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class MazeGeneratorTest {

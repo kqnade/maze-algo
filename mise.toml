@@ -1,5 +1,6 @@
 [tools]
-java = "latest"
+gradle = "8.5"
+java = "11"
 
 [tasks.lint]
 run = "./gradlew lint"
